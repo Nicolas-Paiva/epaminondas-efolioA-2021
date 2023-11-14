@@ -16,30 +16,13 @@ int main(void)
   int validStringsIndex = 0;
   int validWords = 0;
 
-  // for (int i = 0; allStrings[i][0] != '\0'; i++)
-  // {
-  //   isValid = checkString(allStrings[i]);
-  //   if (isValid == 1)
-  //   {
-  //     int j;
-  //     for (j = 0; allStrings[i][j] != '\0'; j++)
-  //     {
-  //       validStrings[validStringsIndex][j] = allStrings[i][j];
-  //     }
-  //     validStrings[validStringsIndex][j] = '\0';
-  //     validStringsIndex++;
-  //     validWords++;
-  //   }
-  // }
-
   addStrings(validStrings, allStrings);
 
   for (int i = 0; i < 7; i++)
   {
     printf("%s\n", validStrings[i]);
   }
-
-  // printf("Valid words: %d\n", validWords);
+  
   return 0;
 }
 
